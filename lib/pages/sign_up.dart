@@ -18,6 +18,7 @@ class SignUp extends StatelessWidget {
           title: const Text('Sign Up'),
           backgroundColor: Colors.grey[700],
         ),
+        backgroundColor: Colors.grey[100],
         body: SingleChildScrollView(
           child: Center(
             child: Column(
@@ -25,6 +26,13 @@ class SignUp extends StatelessWidget {
               children: [
                 const SizedBox(height: 30,),
                 Icon(Icons.app_registration_rounded, size: 100, color: Colors.grey[700],),
+                const SizedBox(height: 30,),
+                const Text(
+                  'We\'re glad to have you join us!',
+                  style: TextStyle(
+                    fontSize: 16
+                  ),
+                ),
                 const SizedBox(height: 30,),
                 MyTextField(
                   obscureText: false, 
