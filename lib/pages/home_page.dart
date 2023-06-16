@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.grey[100],
         body: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),

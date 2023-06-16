@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
             title: const Text('Login',
               style: TextStyle(color: Colors.black87)),
             backgroundColor: Colors.grey[700],),
-          backgroundColor: Colors.grey[400],
+          backgroundColor: Colors.grey[100],
           body: SingleChildScrollView(
             child: Center(
               child: Column(
@@ -35,7 +35,7 @@ class LoginPage extends StatelessWidget {
                   const SizedBox(height: 20,),
                   // logo
                   Icon(
-                    Icons.lock,
+                    Icons.login_rounded,
                     size: 100,
                     color: Colors.grey[600],
                   ),
@@ -118,12 +118,16 @@ class LoginPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SquareIcons(
+                          imagePath: 
+                          'lib/images/google.png', 
                           // ignore: avoid_print
-                          imagePath: 'lib/images/google.png', onTap: () {print('Google login');}),
+                          onTap: () {print('Google login');}),
                       const SizedBox(width: 10),
                       SquareIcons(
+                          imagePath: 
+                          'lib/images/apple.png',
                           // ignore: avoid_print
-                          imagePath: 'lib/images/apple.png', onTap: () {print('Apple login');}),
+                          onTap: () {print('Apple login');}),
                     ],
                   ),
                   const Text('Not yet a member?')
